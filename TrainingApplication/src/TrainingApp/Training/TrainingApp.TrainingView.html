@@ -1,9 +1,7 @@
 Training Name :<input [(ngModel)]="TrainingModel.TrainingName" 
   type=text/><br>
-Training StartDate :<input [(ngModel)]="TrainingModel.TrainingStartDate"
-type=text/><br>
-Training EndDate :<input [(ngModel)]="TrainingModel.TrainingEndDate"
-type=text/><br>
+Training StartDate :<input formControlName="dateFrom" type="date" useValueAsDate /><br>
+Training EndDate :<input formControlName="dateTo" type="date" useValueAsDate /><br>
 <input (click)="Add()"  type=button value="Add"/><br>
 {{TrainingModel.TrainingName}}<br>
 {{TrainingModel.TrainingStartDate}}<br>
